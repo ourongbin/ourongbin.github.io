@@ -35,7 +35,7 @@
 <link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="os,x86," />
 
 
 
@@ -51,15 +51,22 @@
 
 
 
-<meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Bold">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="https://iambvk.wordpress.com/2007/10/10/notes-on-cpl-dpl-and-rpl-terms/
+x86 Segmentation architecture uses there privilege concepts.
+CPL – Current Privilege LevelThis is the privilege of the currently">
+<meta property="og:type" content="article">
+<meta property="og:title" content="notes-on-cpl-dpl-and-rpl-terms">
+<meta property="og:url" content="http://yoursite.com/2016/12/30/notes-on-cpl-dpl-and-rpl-terms/index.html">
 <meta property="og:site_name" content="Bold">
-<meta property="og:description">
+<meta property="og:description" content="https://iambvk.wordpress.com/2007/10/10/notes-on-cpl-dpl-and-rpl-terms/
+x86 Segmentation architecture uses there privilege concepts.
+CPL – Current Privilege LevelThis is the privilege of the currently">
+<meta property="og:updated_time" content="2016-12-30T03:15:12.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Bold">
-<meta name="twitter:description">
+<meta name="twitter:title" content="notes-on-cpl-dpl-and-rpl-terms">
+<meta name="twitter:description" content="https://iambvk.wordpress.com/2007/10/10/notes-on-cpl-dpl-and-rpl-terms/
+x86 Segmentation architecture uses there privilege concepts.
+CPL – Current Privilege LevelThis is the privilege of the currently">
 
 
 
@@ -71,7 +78,7 @@
   };
 </script>
 
-  <title> Bold </title>
+  <title> notes-on-cpl-dpl-and-rpl-terms | Bold </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -92,9 +99,7 @@
 
 
 
-  <div class="container one-column 
-   page-home 
-">
+  <div class="container one-column page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -191,24 +196,9 @@
       <div class="main-inner">
         <div id="content" class="content">
           
-  <section id="posts" class="posts-expand">
 
+  <div id="posts" class="posts-expand">
     
-
-    
-    
-      
-      
-        
-        
-        
-      
-
-      
-    
-
-    
-      
 
   
   
@@ -228,10 +218,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2016/12/30/notes-on-cpl-dpl-and-rpl-terms/" itemprop="url">
-                  notes-on-cpl-dpl-and-rpl-terms
-                </a>
+                notes-on-cpl-dpl-and-rpl-terms
               
             
           </h1>
@@ -264,10 +251,7 @@
       
 
       
-        
-          <span itemprop="articleBody">
-            
-              <p><em><a href="https://iambvk.wordpress.com/2007/10/10/notes-on-cpl-dpl-and-rpl-terms/" target="_blank" rel="external">https://iambvk.wordpress.com/2007/10/10/notes-on-cpl-dpl-and-rpl-terms/</a></em></p>
+        <span itemprop="articleBody"><p><em><a href="https://iambvk.wordpress.com/2007/10/10/notes-on-cpl-dpl-and-rpl-terms/" target="_blank" rel="external">https://iambvk.wordpress.com/2007/10/10/notes-on-cpl-dpl-and-rpl-terms/</a></em></p>
 <p>x86 Segmentation architecture uses there privilege concepts.</p>
 <h3 id="CPL_–_Current_Privilege_Level">CPL – Current Privilege Level</h3><p>This is the privilege of the currently executing code. Last two bits of CS register are considered as CPL.</p>
 <p>Inter-segment calls, jumps, external interrupts, exceptions, task switching etc. operations can change the CS register contents thus, the privilege of currently executing code.</p>
@@ -279,220 +263,48 @@
 <p>How RPL helps to solve Privilege Escalation problem?</p>
 <p>Continuing the above example, whenever device-driver loads the destination segment, it modifies the destination segment’s RPL to match the requestor (lower-privileged) process. Since protection rules for data-segments check for both CPL &lt;= DPL and RPL &lt;= DPL conditions, higher-privileged process gets a protection-fault on RPL &lt;= DPL check.</p>
 <p>The point to note is, higher-privileged code, when it is providing services to lower-privileged processes should reduce its privilege temporarily to the requestors’ privilege-level.</p>
-
-            
-          </span>
-        
+</span>
       
     </div>
 
     <footer class="post-footer">
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/12/15/why-should-you-close-a-pipe-in-linux/" itemprop="url">
-                  why-should-you-close-a-pipe-in-linux
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            发表于
-            <time itemprop="dateCreated" datetime="2016-12-15T11:31:25+08:00" content="2016-12-15">
-              2016-12-15
-            </time>
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/os/" rel="tag">#os</a>
           
-            
+            <a href="/tags/x86/" rel="tag">#x86</a>
           
-
-          
-
         </div>
-      </header>
-    
-
-
-    <div class="post-body">
-
-      
       
 
       
-        
-          <span itemprop="articleBody">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <p><em><a href="http://stackoverflow.com/questions/19265191/why-should-you-close-a-pipe-in-linux" target="_blank" rel="external">http://stackoverflow.com/questions/19265191/why-should-you-close-a-pipe-in-linux</a></em></p>
-<p>If you connect two processes - parent and child - using a pipe, you create the pipe before the fork.</p>
-<p>The fork makes the both processes have access to both ends of the pipe. This is not desirable.</p>
-<ul>
-<li><p>The reading side is supposed to learn that the writer has finished if it notices an EOF condition. This can only happen if all writing sides are closed. So it is best if it closes its writing FD ASAP.</p>
-</li>
-<li><p>The writer should close its reading FD just in order not to have too many FDs open and thus reaching a maybe existing limit of open FDs. Besides, if the then only reader dies, the writer gets notified about this by getting a SIGPIPE or at least an EPIPE error (depending on how signals are defined). If there are several readers, the writer cannot detect that “the real one” went away, goes on writing and gets stuck as the writing FD blocks in the hope, the “unused” reader will read something.</p>
-</li>
-</ul>
-<p>So here in detail what happens:</p>
-<ol>
-<li>parent process calls pipe() and gets 2 file descriptors: let’s call it rd and wr.</li>
-<li>parent process calls fork(). Now both processes have a rd and a wr.</li>
-<li>Suppose the child process is supposed to be the reader.</li>
-<li>Then<ul>
-<li>the parent should close its reading end (for not wasting FDs and for proper detection of dying reader) and</li>
-<li>the child must close its writing end (in order to be possible to detect the EOF condition).</li>
-</ul>
-</li>
-</ol>
-
+              <a href="/2016/12/15/why-should-you-close-a-pipe-in-linux/" rel="next" title="why-should-you-close-a-pipe-in-linux">
+                <i class="fa fa-chevron-left"></i> why-should-you-close-a-pipe-in-linux
+              </a>
             
-          </span>
-        
-      
-    </div>
+          </div>
 
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
+          <div class="post-nav-prev post-nav-item">
             
-            
-              
-                
-                <a class="post-title-link" href="/2015/11/29/hello-world/" itemprop="url">
-                  Hello World
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            发表于
-            <time itemprop="dateCreated" datetime="2015-11-29T14:12:42+08:00" content="2015-11-29">
-              2015-11-29
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-
-    <div class="post-body">
-
-      
       
 
       
-        
-          <span itemprop="articleBody">
-            
-              <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-            
-          </span>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
 
-  </section>
-
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
         </div>
@@ -501,6 +313,10 @@
 
 
         
+  <div class="comments" id="comments">
+    
+  </div>
+
 
       </div>
 
@@ -521,8 +337,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" src="https://avatars2.githubusercontent.com/u/11918023?v=3&s=40" alt="Rongbin Ou" itemprop="image"/>
           <p class="site-author-name" itemprop="name">Rongbin Ou</p>
@@ -567,6 +392,23 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator">
+            <i class="fa fa-angle-double-up"></i>
+          </div>
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#CPL_–_Current_Privilege_Level"><span class="nav-number">1.</span> <span class="nav-text">CPL – Current Privilege Level</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#DPL_–_Descriptor_Privilege_Level"><span class="nav-number">2.</span> <span class="nav-text">DPL – Descriptor Privilege Level</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#RPL_–_Requested_Privilege_Level"><span class="nav-number">3.</span> <span class="nav-text">RPL – Requested Privilege Level</span></a></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator">
+            <i class="fa fa-angle-double-down"></i>
+          </div>
+        </section>
       
 
     </div>
@@ -637,6 +479,167 @@
   <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
 
   
+  
+<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.5.2" id="bootstrap.scrollspy.custom"></script>
+
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    motionMiddleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+      if (CONFIG.sidebar === 'post') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          displaySidebar();
+        }
+      }
+    };
+  });
+</script>
+
+
 
   <script type="text/javascript" src="/js/bootstrap.js"></script>
 
