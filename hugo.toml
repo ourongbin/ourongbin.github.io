@@ -1,4 +1,4 @@
-baseURL = 'https://your-username.github.io/financial-manager/'
+baseURL = 'https://ourongbin.github.io/financial-manager/'
 languageCode = 'zh-cn'
 title = 'Financial Manager'
 theme = 'PaperMod'
